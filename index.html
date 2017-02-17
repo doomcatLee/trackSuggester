@@ -1,13 +1,158 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/scripts.js"></script>
-    <title></title>
-  </head>
-  <body>
-
+<head>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/scripts.js"></script>
+  <title>Track Suggester</title>
+</head>
+<body>
+  <div class="container">
+    <section class="main">
+      <h1>Track Suggester</h1>
+      <form id="name">
+        <label for="name"></label>
+        <input type="text" name="name" value="">
+        <button type="submit" name="button">Start!</button>
+      </form>
+    </section>
+    <section class="survey">
+      <form id="survey">
+        <div class="question1">
+          <h2>1. Which platform would you like to program in?</h2>
+          <div class="radio">
+            <label>
+              <input type="radio" name="option" value="q1a1">
+              Websites
+            </label>
+          </div><!--End of option-->
+          <div class="radio">
+            <label>
+              <input type="radio" name="option" value="q1a2">
+              Smart Phones and tablets
+            </label>
+          </div><!--End of option-->
+          <div class="radio">
+            <label>
+              <input type="radio" name="option" value="q1a3">
+              No preference
+            </label>
+          </div><!--End of option-->
+        </div><!--End of Question 1-->
+        <div class="question2">
+          <h2>2. What's your experience in programming?</h2>
+          <div class="radio">
+            <label>
+              <input type="radio" name="option" value="q2a1">
+              Pretty experienced
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="option" value="q2a2">
+              Dabbled on programming before
+            </label>
+          </div><!--End of option-->
+          <div class="radio">
+            <label>
+              <input type="radio" name="option" value="q2a3">
+              What's programming?
+            </label>
+          </div><!--End of option-->
+        </div><!--End of Question 2-->
+        <div class="question3">
+          <h2>3. Which type of company do you wish to work for?</h2>
+          <div class="radio">
+            <label>
+              <input type="radio" name="option" value="q3a1">
+              The Big 4 (Google, Microsoft, Amazon, Facebook)
+            </label>
+          </div><!--End of option-->
+          <div class="radio">
+            <label>
+              <input type="radio" name="option" value="q3a2">
+              Medium-sized company
+            </label>
+          </div><!--End of option-->
+          <div class="radio">
+            <label>
+              <input type="radio" name="option" value="q3a3">
+              Startin' my own business bruh
+            </label>
+          </div><!--End of option-->
+        </div><!--End of Question 3-->
+        <div class="question4">
+          <h2>4. Your expected salary as a developer?</h2>
+          <div class="radio">
+            <label>
+              <input type="radio" name="option" value="subtract">
+              1. At least $100,000
+            </label>
+          </div><!--End of option-->
+          <div class="radio">
+            <label>
+              <input type="radio" name="option" value="subtract">
+              2. Average - $50,000 to $80,000
+            </label>
+          </div><!--End of option-->
+          <div class="radio">
+            <label>
+              <input type="radio" name="option" value="subtract">
+              3. True developers should not be concerned with their salary...
+            </label>
+          </div><!--End of option-->
+        </div><!--End of Question 4-->
+        <div class="question5">
+          <h2>5.  </h2>
+          <div class="radio">
+            <label>
+              <input type="radio" name="option" value="subtract">
+              1. Option 1
+            </label>
+          </div><!--End of option-->
+          <div class="radio">
+            <label>
+              <input type="radio" name="option" value="subtract">
+              2. Option 2
+            </label>
+          </div><!--End of option-->
+          <div class="radio">
+            <label>
+              <input type="radio" name="option" value="subtract">
+              3. Option 3
+            </label>
+          </div><!--End of option-->
+        </div><!--End of Question 5-->
+        <div class="question6">
+          <h2>1. Question five will be here</h2>
+          <div class="radio">
+            <label>
+              <input type="radio" name="option" value="subtract">
+              1. Option 1
+            </label>
+          </div><!--End of option-->
+          <div class="radio">
+            <label>
+              <input type="radio" name="option" value="subtract">
+              2. Option 2
+            </label>
+          </div><!--End of option-->
+          <div class="radio">
+            <label>
+              <input type="radio" name="option" value="subtract">
+              3. Option 3
+            </label>
+          </div><!--End of option-->
+        </div><!--End of Question 6-->
+        <button type="submit" class="btn">Show me the suggestion!</button>
+      </form>
+    </section>
+    <section class="result">
+      <h1>Alex, based on your awesome answers...</h1>
+      <div id="resultBox">
+        <h2>ruby</h2>
+      </div><!--End of result box-->
+    </section>
   </body>
-</html>
+  </html>
