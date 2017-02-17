@@ -10,10 +10,11 @@
 <body>
   <div class="container">
     <section class="main">
-      <h1>Track Suggester</h1>
+      <h1>Epicodus Track Suggester</h1>
       <form id="name">
+        <h2>Enter your name to start</h2>
         <label for="name"></label>
-        <input type="text" name="name" id="name">
+        <input type="text" class="form-control" id="name">
         <button type="submit" class="btn btn-success" name="start">Start!</button>
       </form>
     </section>
@@ -87,19 +88,19 @@
           <div class="radio">
             <label>
               <input type="radio" name="question4" value="q4a1">
-              1. At least $100,000
+              At least $100,000
             </label>
           </div><!--End of option-->
           <div class="radio">
             <label>
               <input type="radio" name="question4" value="q4a2">
-              2. Average - $50,000 to $80,000
+              Average - $50,000 to $80,000
             </label>
           </div><!--End of option-->
           <div class="radio">
             <label>
               <input type="radio" name="question4" value="q4a3">
-              3. True developers should not be concerned with their salary...
+              True developers should not be concerned with their salary...
             </label>
           </div><!--End of option-->
         </div><!--End of Question 4-->
@@ -108,19 +109,19 @@
           <div class="radio">
             <label>
               <input type="radio" name="question5" value="q5a1">
-              1. Social media companies (Facebook, LinkedIn, Twitter)
+              Social media companies (Facebook, LinkedIn, Twitter)
             </label>
           </div><!--End of option-->
           <div class="radio">
             <label>
               <input type="radio" name="question5" value="q5a2">
-              2. eCommerce companies (Amazon, eBay, Groupon)
+              eCommerce companies (Amazon, eBay, Groupon)
             </label>
           </div><!--End of option-->
           <div class="radio">
             <label>
               <input type="radio" name="question5" value="q5a3">
-              3. Search Engine Companies (Google, Yahoo, Bing)
+              Search Engine Companies (Google, Yahoo, Bing)
             </label>
           </div><!--End of option-->
         </div><!--End of Question 5-->
@@ -129,37 +130,53 @@
           <div class="radio">
             <label>
               <input type="radio" name="question6" value="q6a1">
-              1. I LOVE IT!!!
+               LOVE IT!!!
             </label>
           </div><!--End of option-->
           <div class="radio">
             <label>
               <input type="radio" name="question6" value="q6a2">
-              2. Ew, raw fish?
+              Ew, raw fish?
             </label>
           </div><!--End of option-->
           <div class="radio">
             <label>
               <input type="radio" name="question6" value="q6a3">
-              3. Is that Chinese?
+              Is that Chinese?
             </label>
           </div><!--End of option-->
         </div><!--End of Question 6-->
-        <button type="submit" class="btn">Show me the suggestion!</button>
+        <button type="submit" class="btn btn-primary">Show me the suggestion!</button>
       </form>
     </section>
     <section class="result">
-      <h1><span id="name"></span> , based on your awesome answers...</h1>
       <div id="resultBox">
-        <h2>Language</h2>
+        <h1><span id="name"></span>, based on your awesome answers we recommend...</h1>
         <ul>
-          <li id="ruby">Ruby/Rails</li>
-          <li id="java">Java/Android</li>
-          <li id="cs">C#/.NET</li>
-          <li id="php">PHP/Drupal</li>
-          <li id="css">CSS/Design</li>
+          <li id="ruby">
+            <h2>Ruby/Rails track!</h2>
+            <img src="img/ruby.jpg" alt="picture of ruby in rails"/>
+            <button type="button" class="btn btn-warning"><a href="javascript:history.go(0)">Click here to start again!</a></button>
+          </li>
+          <li id="java">
+            <h2>Java/Android track!</h2>
+            <img src="img/java.png" alt="picture of ruby in rails"/>
+            <button type="button" class="btn btn-warning"><a href="javascript:history.go(0)">Click here to start again!</a></button>
+          </li>
+          <li id="cs">
+            <h2>C#/.NET track!</h2>
+            <img src="img/cs.png" alt="picture of ruby in rails"/><button type="button" class="btn btn-warning"><a href="javascript:history.go(0)">Click here to start again!</a></button>
+          </li>
+          <li id="php">
+            <h2>PHP/Drupal track!</h2>
+            <img src="img/php.jpg" alt="picture of ruby in rails"/><button type="button" class="btn btn-warning"><a href="javascript:history.go(0)">Click here to start again!</a></button>
+          </li>
+          <li id="css">
+            <h2>CSS/Design track!</h2>
+            <img src="img/css.png" alt="picture of ruby in rails"/><button type="button" class="btn btn-warning"><a href="javascript:history.go(0)">Click here to start again!</a></button>
+          </li>
         </ul>
       </div><!--End of result box-->
-    </section>
+    </section><!--End of result section-->
   </body>
   </html>

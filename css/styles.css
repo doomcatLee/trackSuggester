@@ -1,3 +1,81 @@
-section.survey, section.result{
+section.survey{
   display:none;
+}
+
+
+form#survey{
+  margin-top: 50px;
+  margin-left: 20%;
+}
+
+form#survey h2{
+  margin-bottom: 15px;
+}
+
+
+form#survey button{
+  margin-top: 5%;
+  margin-left: 20%;
+  font-size: 30px;
+}
+
+#resultBox h1, li{
+  display: none;
+}
+
+.main{
+  text-align: center;
+}
+
+.main h1{
+  font-size: 80px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+}
+
+.main h2{
+  margin-bottom: 5px;
+}
+
+form#survey .radio{
+  font-size: 20px;
+}
+
+.question1, .question2, .question3, .question4, .question5{
+  margin-bottom: 4%;
+}
+
+input#name{
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+
+#resultBox h1{
+  text-align: center;
+  margin-top: 5%;
+}
+
+ul{
+  margin-left:30%;
+}
+
+ul h2{
+  font-size: 70px;
+  margin-top: 10%;
+  margin-bottom: 70px;
+}
+
+#resultBox button{
+  display: block;
+  margin-top: 10%;
+  margin-left: 7%;
+}
+li#ruby{
+}
+
+img{
+  width: 300px;
 }

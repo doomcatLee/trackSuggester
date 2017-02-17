@@ -1,5 +1,3 @@
-//JS BackEnd Logic
-
 
 $(function(){
   //global variables
@@ -10,8 +8,8 @@ $(function(){
     name = $("input#name").val();
     $(".main").hide();
     $(".survey").show();
-  });
-    //user inputs survey submit
+  });//End of submit name function
+  //user inputs survey submit
   $("form#survey").submit(function(){
     event.preventDefault();
     var q1 = $("input:radio[name=question1]:checked").val();
@@ -24,18 +22,25 @@ $(function(){
 
     //Nasty nested if statements will be here
     if (q1 === "q1a1" && (q2 === "q2a2" || "q2a3") && (q3 === "q3a1" || "q3a2" || "q3a3") && (q4 === "q4a2" || "q4a3") && (q5 === "q5a1" || "q5a2" || "q5a3")){
-      console.log("RUBY");
+      $(".survey").hide();
+      $("#resultBox h1, #ruby").show();
+      $("span#name").text(name);
     }else if (q1 === "q1a2"){
-      console.log("java");
+      $(".survey").hide();
+      $("#resultBox h1, #java").show();
+      $("span#name").text(name);
     }else if(q1 === "q1a1" && (q2 === "q2a2" || "q2a1" || "q2a3") && (q3 === "q3a1" || "q3a2" || "q3a3") && (q4 === "q4a1" || "q4a3" || "q4a2") && (q5 === "q5a1")){
-      console.log("php")
+      $(".survey").hide();
+      $("#resultBox h1, #php").show();
+      $("span#name").text(name);
     }else if (q1 === "q1a3" && q2 === "q2a3" && (q3 === "q3a1" || "q3a2" || "q3a3") && q4 === "q4a3" && q5 === "q5a1"){
-      console.log("cs")
+      $(".survey").hide();
+      $("#resultBox h1, #cs").show();
+      $("span#name").text(name);
     }else{
-      console.log("css")
-    }
-    $(".survey").hide();
-    $("span#name").text(name);
-    $(".result").show();
-  });
-});
+      $(".survey").hide();
+      $("#resultBox h1, #css").show();
+      $("span#name").text(name);
+    }//End of if statments
+  });//End of survey submit function
+});//End of jQuery doc ready
