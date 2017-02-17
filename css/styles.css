@@ -6,6 +6,10 @@ section.survey{
   display:none;
 }
 
+img#shia{
+  width: 300px;
+  display: inline;
+}
 
 form#survey{
   margin-top: 50px;
