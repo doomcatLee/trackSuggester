@@ -10,6 +10,8 @@ section.result{
   font-family: 'Rubik',sans-serif;
 }
 
+
+
 img#shia{
   width: 300px;
   display: inline;
@@ -25,11 +27,6 @@ form#survey h2{
 }
 
 
-form#survey button{
-  margin-top: 5%;
-  margin-left: 30%;
-  font-size: 30px;
-}
 
 #resultBox h1, li{
   display: none;
@@ -84,12 +81,6 @@ ul h2{
 img{
   float:left;
 }
-#resultBox button{
-  font-size: 30px;
-  display: block;
-  margin-top: 10%;
-  margin-left: 35%;
-}
 
 #results{
   display: inline;
@@ -99,6 +90,9 @@ img{
   font-size: 20px;
   margin-left: 22%;
 }
+#resultBox a{
+  color: #e2e2e2;
+}
 
 span#name{
   color: #93fffc;
@@ -106,4 +100,25 @@ span#name{
 }
 img{
   width: 150px;
+}
+
+.btn-success{
+  font-family: 'Rubik',sans-serif;
+  font-size: 30px;
+  border-radius: 30px;
+}
+
+#resultBox button{
+  font-size: 30px;
+  display: block;
+  margin-top: 10%;
+  margin-left: 35%;
+  border-radius: 30px;
+}
+
+form#survey button{
+  margin-top: 5%;
+  margin-left: 30%;
+  font-size: 30px;
+  border-radius: 30px;
 }

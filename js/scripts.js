@@ -12,7 +12,7 @@ $(function(){
     event.preventDefault();
     name = $("input#name").val();
     $(".main").hide();
-    $(".survey").fadeIn(1000);
+    $(".survey").show("blind",1000);
   });//End of submit name function
   //user inputs survey submit
   $("form#survey").submit(function(){
@@ -30,24 +30,23 @@ $(function(){
     //q=question, a=answer; q1a3 -> question1 answer 3
     if (q1 === "q1a1" && (q2 === "q2a3") && (q3 === "q3a2" || "q3a3") && (q4 === "q4a2" || "q4a3") && (q5 === "q5a1" || "q5a3")){
       $(".survey").hide("explode");
-      $("#resultBox h1, #ruby").fadeIn(1000);
+      $("#resultBox h1, #ruby").fadeIn(10);
       $("span#name").text(name);
     }else if (q1 === "q1a2"){
       $(".survey").hide("explode");
-      $("#resultBox h1, #java").fadeIn(1000);
+      $("#resultBox h1, #java").fadeIn(10);
       $("span#name").text(name);
     }else if(q1 === "q1a1" && (q2 === "q2a1") && q3 === "q3a1" && (q4 === "q4a1" || "q4a3" || "q4a2") && (q5 === "q5a1")){
       $(".survey").hide("explode");
-      $("#resultBox h1, #php").fadeIn(1000);
+      $("#resultBox h1, #php").fadeIn(10);
       $("span#name").text(name);
     }else if (q1 === "q1a3"){
       $(".survey").hide("explode");
-      $("#resultBox h1, #cs").fadeIn(1000);
+      $("#resultBox h1, #cs").fadeIn(10);
       $("span#name").text(name);
     }else{
-      $(".survey").hide("explode");
-      $("#resultBox h1, #css").fadeIn(1000);
-      // $("#resultBox h1, #css").fadeIn(1000);
+      $(".survey").hide("explode", "slow");
+      $("#resultBox h1, #css").fadeIn(10);
       $("span#name").text(name);
     }//End of if statments
   });//End of survey submit function
