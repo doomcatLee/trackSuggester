@@ -2,6 +2,10 @@
 $(function(){
   //global variables
   var name = "";
+  //Attaching hover function to all buttons
+  $("button").hover(function(){
+    $("button").effect("shake","slow");
+  });
   //user inputs name submit
   $("form#name").submit(function(){
     event.preventDefault();
