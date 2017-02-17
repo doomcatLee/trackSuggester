@@ -13,8 +13,8 @@
       <h1>Track Suggester</h1>
       <form id="name">
         <label for="name"></label>
-        <input type="text" name="name" value="">
-        <button type="submit" name="button">Start!</button>
+        <input type="text" name="name" id="name">
+        <button type="submit" class="btn btn-success" name="start">Start!</button>
       </form>
     </section>
     <section class="survey">
@@ -23,19 +23,19 @@
           <h2>1. Which platform would you like to program in?</h2>
           <div class="radio">
             <label>
-              <input type="radio" name="option" value="q1a1">
+              <input type="radio" name="question1" value="q1a1">
               Websites
             </label>
           </div><!--End of option-->
           <div class="radio">
             <label>
-              <input type="radio" name="option" value="q1a2">
+              <input type="radio" name="question1" value="q1a2">
               Smart Phones and tablets
             </label>
           </div><!--End of option-->
           <div class="radio">
             <label>
-              <input type="radio" name="option" value="q1a3">
+              <input type="radio" name="question1" value="q1a3">
               No preference
             </label>
           </div><!--End of option-->
@@ -44,40 +44,40 @@
           <h2>2. What's your experience in programming?</h2>
           <div class="radio">
             <label>
-              <input type="radio" name="option" value="q2a1">
+              <input type="radio" name="question2" value="q2a1">
               Pretty experienced
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="option" value="q2a2">
+              <input type="radio" name="question2" value="q2a2">
               Dabbled on programming before
             </label>
           </div><!--End of option-->
           <div class="radio">
             <label>
-              <input type="radio" name="option" value="q2a3">
+              <input type="radio" name="question2" value="q2a3">
               What's programming?
             </label>
           </div><!--End of option-->
         </div><!--End of Question 2-->
         <div class="question3">
-          <h2>3. Which type of company do you wish to work for?</h2>
+          <h2>3. What size of company do you wish to work for?</h2>
           <div class="radio">
             <label>
-              <input type="radio" name="option" value="q3a1">
+              <input type="radio" name="question3" value="q3a1">
               The Big 4 (Google, Microsoft, Amazon, Facebook)
             </label>
           </div><!--End of option-->
           <div class="radio">
             <label>
-              <input type="radio" name="option" value="q3a2">
+              <input type="radio" name="question3" value="q3a2">
               Medium-sized company
             </label>
           </div><!--End of option-->
           <div class="radio">
             <label>
-              <input type="radio" name="option" value="q3a3">
+              <input type="radio" name="question3" value="q3a3">
               Startin' my own business bruh
             </label>
           </div><!--End of option-->
@@ -86,62 +86,62 @@
           <h2>4. Your expected salary as a developer?</h2>
           <div class="radio">
             <label>
-              <input type="radio" name="option" value="subtract">
+              <input type="radio" name="question4" value="q4a1">
               1. At least $100,000
             </label>
           </div><!--End of option-->
           <div class="radio">
             <label>
-              <input type="radio" name="option" value="subtract">
+              <input type="radio" name="question4" value="q4a2">
               2. Average - $50,000 to $80,000
             </label>
           </div><!--End of option-->
           <div class="radio">
             <label>
-              <input type="radio" name="option" value="subtract">
+              <input type="radio" name="question4" value="q4a3">
               3. True developers should not be concerned with their salary...
             </label>
           </div><!--End of option-->
         </div><!--End of Question 4-->
         <div class="question5">
-          <h2>5.  </h2>
+          <h2>5. What type of software industry do you wish to work for?</h2>
           <div class="radio">
             <label>
-              <input type="radio" name="option" value="subtract">
-              1. Option 1
+              <input type="radio" name="question5" value="q5a1">
+              1. Social media companies (Facebook, LinkedIn, Twitter)
             </label>
           </div><!--End of option-->
           <div class="radio">
             <label>
-              <input type="radio" name="option" value="subtract">
-              2. Option 2
+              <input type="radio" name="question5" value="q5a2">
+              2. eCommerce companies (Amazon, eBay, Groupon)
             </label>
           </div><!--End of option-->
           <div class="radio">
             <label>
-              <input type="radio" name="option" value="subtract">
-              3. Option 3
+              <input type="radio" name="question5" value="q5a3">
+              3. Search Engine Companies (Google, Yahoo, Bing)
             </label>
           </div><!--End of option-->
         </div><!--End of Question 5-->
         <div class="question6">
-          <h2>1. Question five will be here</h2>
+          <h2>6. Do you like sushi?</h2>
           <div class="radio">
             <label>
-              <input type="radio" name="option" value="subtract">
-              1. Option 1
+              <input type="radio" name="question6" value="q6a1">
+              1. I LOVE IT!!!
             </label>
           </div><!--End of option-->
           <div class="radio">
             <label>
-              <input type="radio" name="option" value="subtract">
-              2. Option 2
+              <input type="radio" name="question6" value="q6a2">
+              2. Ew, raw fish?
             </label>
           </div><!--End of option-->
           <div class="radio">
             <label>
-              <input type="radio" name="option" value="subtract">
-              3. Option 3
+              <input type="radio" name="question6" value="q6a3">
+              3. Is that Chinese?
             </label>
           </div><!--End of option-->
         </div><!--End of Question 6-->
@@ -149,9 +149,16 @@
       </form>
     </section>
     <section class="result">
-      <h1>Alex, based on your awesome answers...</h1>
+      <h1><span id="name"></span> , based on your awesome answers...</h1>
       <div id="resultBox">
-        <h2>ruby</h2>
+        <h2>Language</h2>
+        <ul>
+          <li id="ruby">Ruby/Rails</li>
+          <li id="java">Java/Android</li>
+          <li id="cs">C#/.NET</li>
+          <li id="php">PHP/Drupal</li>
+          <li id="css">CSS/Design</li>
+        </ul>
       </div><!--End of result box-->
     </section>
   </body>
