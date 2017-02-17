@@ -58,24 +58,33 @@ input#name{
   margin-top: 5%;
 }
 
-ul{
-  margin-left:30%;
-}
-
 ul h2{
   font-size: 70px;
   margin-top: 10%;
-  margin-bottom: 70px;
-}
-
-#resultBox button{
-  display: block;
-  margin-top: 10%;
-  margin-left: 7%;
-}
-li#ruby{
+  margin-bottom: 50px;
+  margin-left: 250px;
+  padding-top:20px;
 }
 
 img{
-  width: 300px;
+  float:left;
+}
+#resultBox button{
+  font-size: 30px;
+  display: block;
+  margin-top: 10%;
+  margin-left: 35%;
+}
+
+#results{
+  display: inline;
+}
+
+#resultBox p{
+  font-size: 20px;
+  margin-left: 22%;
+}
+
+img{
+  width: 150px;
 }
