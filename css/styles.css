@@ -1,9 +1,13 @@
 body{
-  background-color: #f7f7f7;
+  background-image: url("../img/bg2.jpg");
 }
 
 section.survey{
   display:none;
+}
+
+section.result{
+  font-family: 'Rubik',sans-serif;
 }
 
 img#shia{
@@ -23,7 +27,7 @@ form#survey h2{
 
 form#survey button{
   margin-top: 5%;
-  margin-left: 20%;
+  margin-left: 30%;
   font-size: 30px;
 }
 
@@ -36,14 +40,16 @@ form#survey button{
 }
 
 .main h1{
-  font-size: 80px;
-  margin-top: 5%;
+  font-family: 'Barrio', cursive;
+  font-size: 100px;
+  margin-top: 40%;
   margin-bottom: 5%;
 
 }
 
 .main h2{
   margin-bottom: 5px;
+  font-family: monospace;
 }
 
 form#survey .radio{
@@ -64,6 +70,7 @@ input#name{
 #resultBox h1{
   text-align: center;
   margin-top: 5%;
+  font-family: cursive;
 }
 
 ul h2{
@@ -93,6 +100,10 @@ img{
   margin-left: 22%;
 }
 
+span#name{
+  color: #93fffc;
+  font-size: 50px;
+}
 img{
   width: 150px;
 }

@@ -3,8 +3,8 @@ $(function(){
   //global variables
   var name = "";
   //Attaching hover function to all buttons
-  $("button").hover(function(){
-    $("button").effect("shake","slow");
+  $("button").mouseover(function(){
+    $("button:not(:animated)").effect( "shake", {times:3}, 300 );//so buttons after don't shake by itself
   });
 
   //user inputs name submit
