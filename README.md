@@ -1,7 +1,7 @@
 # Epicodus Track Picker
 This website will select five tracks offered at Epicodus by asking users questions about their preferences.
 
-## Using the project starter
+## Using the Epicodus Track Picker
 ```
 cd /desiredLocation
 ```
@@ -12,7 +12,7 @@ git clone https://github.com/doomcatlee/trackSuggester
 cd trackSuggester
 ```
 ```
-cd open index.html
+open index.html
 ```
 
 ## Known Bugs
@@ -27,6 +27,7 @@ Alex at doomcat9167@gmail.com.
 * HTML5
 * css
 * jQuery.js/jQuery UI
+* JavaSript
 
 ### License
 
